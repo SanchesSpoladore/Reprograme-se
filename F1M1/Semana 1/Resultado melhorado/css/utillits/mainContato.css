@@ -1,0 +1,20 @@
+@import url("./main.css");
+
+h1 {
+  font-weight: 500;
+  font-family: var(--ubuntu);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+li::before {
+  content: "-";
+  color: #5522ff;
+  font-weight: 500;
+  margin-right: 5px;
+  font-size: 24px;
+}

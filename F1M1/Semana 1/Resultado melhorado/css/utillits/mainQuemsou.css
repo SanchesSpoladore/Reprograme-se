@@ -1,0 +1,65 @@
+@import url("./main.css");
+
+.quemsou h1 {
+  font-weight: 500;
+  font-family: var(--ubuntu);
+  font-size: 28px;
+}
+
+.descricao,
+h3 {
+  font-weight: 400;
+  font-size: 23px;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.habilidade {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.quemsou .container {
+  width: max-content;
+}
+
+.habilidade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progresso {
+  width: 200px;
+  height: 10px;
+  background: white;
+  display: inline-block;
+  position: relative;
+  border-radius: 20px;
+  right: -20px;
+}
+
+.progresso::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  display: flex;
+  background: #5522ff;
+  border-radius: 20px;
+}
+
+.progresso.p70::after {
+  width: 70%;
+}
+
+.progresso.p90::after {
+  width: 90%;
+}
+
+.progresso.p60::after {
+  width: 60%;
+}

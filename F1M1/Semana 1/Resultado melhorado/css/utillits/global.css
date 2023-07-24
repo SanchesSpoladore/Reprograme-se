@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+:root {
+  --roboto: "Roboto", sans-serif;
+  --ubuntu: "Ubuntu", sans-serif;
+}
+
+body {
+  background: rgb(34, 34, 34);
+  font-family: var(--roboto);
+}
+
+a {
+  text-decoration: none;
+}

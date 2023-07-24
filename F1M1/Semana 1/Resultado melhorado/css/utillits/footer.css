@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background: rgba(10, 10, 10, 0.5);
+}
+
+footer img {
+  width: 60px;
+}

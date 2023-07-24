@@ -1,0 +1,22 @@
+.sumario {
+  margin-top: 150px;
+}
+
+.sumario h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.sumario dt {
+  margin-top: 15px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.sumario dd::before {
+  content: "-";
+  color: #5522ff;
+  font-weight: 500;
+  font-size: 24px;
+}
