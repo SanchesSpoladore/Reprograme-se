@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfolio :: Contato</title>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="./img/header.svg"
+        alt="Imagem contendo o nome(Sanches Lima do Valle Spoladore) e minha função(desenvolvedor web e web design)"
+        width="100%"
+      />
+
+      <hr />
+      <h3>
+        <i><a href="index.html">Principal</a></i> ::
+        <i><a href="quemsou.html">Quem Sou</a></i> ::
+        <i><a href="projetos.html">Projetos</a></i> ::
+        <i><a href="contato.html">Contato</a></i>
+      </h3>
+      <hr />
+    </header>
+
+    <h1>Contato</h1>
+    <ul>
+      <li>Residente em Cachoeiro de Itapemirim/ES</li>
+      <li><a href="mailto:contato@email.com">contato@email.com</a></li>
+      <li>(27) 99999-9999</li>
+      <li>
+        <a href="https://www.linkedin.com/in/sanches-spoladore">LinkedIn</a>
+      </li>
+    </ul>
+
+    <hr />
+
+    <h2>Formulário de Contato</h2>
+
+    <form method="post">
+      <label for="nome">Nome</label><br />
+      <input type="text" name="nome" id="nome" />
+      <br />
+      <br />
+      <label for="assunto">Assunto</label><br />
+      <select name="assunto" id="estado">
+        <option value="" disabled selected>Selecione o assunto...</option>
+        <option value="sugestões">Sugestões</option>
+        <option value="reclamacoes">Reclamações</option>
+        <option value="orcamento">Orçamento</option>
+        <option value="Outros">Outros</option>
+      </select>
+      <br />
+      <br />
+      <label for="mensagem">Mensagem</label><br />
+      <textarea name="mensagem" id="mensagem cols="30" rows="10"></textarea>
+      <br />
+      <br />
+      <input type="checkbox" name="receberNewsletter" id="receberNewsletter">
+      <label for="receberNewsletter">Deseja receber minha newsletter?</label>
+      <br />
+      <br />
+      <label for="ondeEncontrou">Onde me encontrou?</label><br />
+      <input type="radio" name="ondeEncontrou" id="ondeEncontrou" value="YouTube">YouTube<br />
+      <input type="radio" name="ondeEncontrou" id="ondeEncontrou" value="Google">Google<br />
+      <input type="radio" name="ondeEncontrou" id="ondeEncontrou" value="Bing">Bing<br />
+      <input type="radio" name="ondeEncontrou" id="ondeEncontrou" value="Outros">Outros<br />
+      <br />
+      <input type="submit" value="Enviar">
+    </form>
+
+    <hr />
+    <p>Copyright &copy; 2023</p>
+    <p>
+      <img src="./img/ifes.png" alt="Logo do IFES" height="96" />
+    </p>
+  </body>
+</html>
