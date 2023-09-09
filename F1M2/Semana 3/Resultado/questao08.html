@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 08</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <p><a href="index.html">Voltar ao Índice</a></p>
+        <h1 class="display-2">Questão 08</h1>
+        <p class="lead">
+            Usando somente estilos baseados em classes do Bootstrap 5, aprimore o
+            formulário da questão 7 para que todos os seus campos fiquem com títulos
+            flutuantes.
+        </p>
+        <hr />
+    </div>
+    <!-- Valor: 1.5 pontos -->
+    <!-- FAZER AQUI -->
+    <div class="container d-flex justify-content-center">
+        <form class="col-12 col-lg-8 col-xl-6">
+            <h2>Cadastro de Cliente</h2>
+            <div class="mb-3 form-floating">
+                <input type="text" class="form-control" id="name" placeholder="" />
+                <label for="name">Nome Completo</label>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-3 form-floating">
+                    <input type="text" class="form-control" id="cpf" placeholder="" />
+                    <label for="cpf">CPF</label>
+                </div>
+                <div class="col-12 col-lg-4 mb-3 form-floating">
+                    <input type="date" class="form-control" id="birthdate" placeholder="" />
+                    <label for="birthdate">Data de Nascimento</label>
+                </div>
+                <div class="col-12 col-lg-4 mb-3 form-floating">
+                    <select class="form-select" id="gender">
+                        <option selected>Selecione um gênero...</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Outro</option>
+                    </select>
+                    <label for="gender">Gênero</label>
+                </div>
+            </div>
+            <div class="mb-3 form-floating">
+                <input type="text" class="form-control" id="" placeholder="" />
+                <label for="">Endereço Completo</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-3">Cadastrar</button><br />
+        </form>
+    </div>
+</body>
+
+</html>
