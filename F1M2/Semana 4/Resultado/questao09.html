@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 09</title>
+</head>
+
+<body>
+    <div class="container my-3">
+        <p><a href="index.html">Voltar ao Índice</a></p>
+        <h1 class="display-2">Questão 09</h1>
+        <p class="lead">
+            Usando exclusivamente classes do Bootstrap 5, crie um indicador de caminho (breadcrumbs) contendo os itens "Principal", "Área Restrita" e "Dados Pessoais", nesta ordem, tendo como separador o caractere ">". Em seguida, adicione uma linha horizontal e 2 componentes de carregamento (spinners) de dimensões 100px por 100px, sendo um componente de cada tipo e de cor temática diferente.
+        </p>
+        <p class="lead">
+            Dica: use as propriedades CSS width e height para definir o tamanho dos spinners.
+        </p>
+        <hr>
+    </div>
+    <!-- Valor: 1.5 pontos -->
+    <!-- Breadcrumbs e Spinners -->
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Principal</li>
+                <li class="breadcrumb-item">Área Restrita</li>
+                <li class="breadcrumb-item active" aria-current="page">Dados Pessoais</li>
+            </ol>
+        </nav>
+
+        <!-- Linha Horizontal -->
+        <hr>
+
+        <!-- Spinners -->
+        <div class="d-flex justify-content-between">
+            <div class="spinner-border text-primary" style="width: 100px; height: 100px;" role="status">
+                <span class="visually-hidden">Carregando...</span>
+            </div>
+            <div class="spinner-grow text-danger" style="width: 100px; height: 100px;" role="status">
+                <span class="visually-hidden">Carregando...</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
