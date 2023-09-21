@@ -263,7 +263,7 @@ div.rodape {
     /* 2. Posicionamento estático */
     position: static;
     /* 3. Largura de 80% da largura da área de visualização */
-    width: 80%;
+    width: 80vw;
     /* 4. Altura automática */
     height: auto;
   }
@@ -285,21 +285,21 @@ div.rodape {
 
   .areaesquerda .menu img {
     /* 9. Largura de 2.5% da largura área de visualização */
-    width: 2.5%;
+    width: 2.5vw;
     /* 10. Margem direita de 0.6% da largura área de visualização */
-    margin-right: 0.6%;
+    margin-right: 0.6vw;
   }
 
   .areaesquerda .menu a {
     /* 11. Tamanho de fonte de 2.5% da largura área de visualização */
-    font-size: 2.5%;
+    font-size: 2.5vw;
   }
 
   .areaesquerda h2 {
     /* 12. Alinhamento vertical superior */
     vertical-align: top;
     /* 13. Margens zeradas (forçar) */
-    margin: 0;
+    margin: 0 !important;
     font-size: 6vw;
   }
 
@@ -335,7 +335,7 @@ div.rodape {
   .sobre .hero img {
     width: 100%;
     /* 19. Altura automática (forçar) */
-    height: auto;
+    height: auto !important;
   }
 
   .sobre .hero .texto h2 {
