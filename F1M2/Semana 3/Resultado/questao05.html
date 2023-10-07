@@ -27,23 +27,23 @@
     <!-- FAZER AQUI -->
     <div class="container d-flex justify-content-center">
         <form class="col-4">
-            <h2>Login</h2>
-            <div class="mb-3 form-floating">
-                <input type="email" class="form-control" id="email" placeholder="name@example.com" />
-                <label for="email"><i class="bi bi-person-fill"></i> Usuário (E-mail)</label>
+            <h2 class="mb-3">Login</h2>
+            <div class="mb-3 input-group">
+                <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                <input type="email" class="form-control" id="email" placeholder="Usuário (E-mail)">
             </div>
-            <div class="mb-3 form-floating">
-                <input type="password" class="form-control" id="password" placeholder="Password" />
-                <label for="password"><i class="bi bi-lock-fill"></i> Senha</label>
+            <div class="mb-3 input-group">
+                <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                <input type="password" class="form-control" id="password" placeholder="Senha">
             </div>
-            <div class="mb-3 form-floating">
-                <select class="form-select" id="profile">
+            <div class="mb-3 input-group">
+                <span class="input-group-text"><i class="bi bi-person-lines-fill"></i></span>
+                <select class="form-select" id="profile" placeholder="Perfil">
                     <option selected>Selecione um perfil...</option>
                     <option value="1">Administrador</option>
                     <option value="2">Gerente</option>
                     <option value="3">Usuário</option>
                 </select>
-                <label for="profile"><i class="bi bi-person-lines-fill"></i> Perfil</label>
             </div>
             <div class="mb-3 form-check form-switch">
                 <input type="checkbox" class="form-check-input" id="remember-me" />

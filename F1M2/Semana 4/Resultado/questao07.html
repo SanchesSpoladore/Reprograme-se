@@ -20,13 +20,30 @@
         </p>
         <ul class="lead">
             <li>
-                A primeira deve ser um <a href="#" class="btn btn-primary" data-bs-toggle="toast" data-bs-target="#toastInfo">Toast</a> com o título "Informação" precedido por um ícone qualquer do Bootstrap Icons, e com o texto "Esta é uma notificação criada pelo componente Toast do Bootstrap 5.".
+                <!-- Mensagem flutuante Toast -->
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                    <div class="toast-header">
+                        <i class="bi bi-info-circle"></i>
+                        <strong class="me-auto">Informação</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
+                    </div>
+                    <div class="toast-body">
+                        Esta é uma notificação criada pelo componente Toast do Bootstrap 5.
+                    </div>
+                </div>
             </li>
             <li>
-                A segunda deve ser um <button class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Esta é uma dica flutuante criada pelo componente Tooltip do Bootstrap 5.">Tooltip</button> adicionado a um botão intitulado "Posicione o Mouse Aqui". O Tooltip deve aparecer à direita.
+                <!-- Mensagem flutuante Tooltip -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Esta é uma dica flutuante criada pelo componente Tooltip do Bootstrap 5.">Posicione o Mouse
+                    Aqui</button>
             </li>
             <li>
-                A terceira mensagem deve ser um <button class="btn btn-danger" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Esta é outra dica flutuante criada pelo componente Popover do Bootstrap 5." data-bs-title="Informação">Popover</button> adicionado a um botão intitulado "Clique Aqui". O Popover deve aparecer à direita.
+                <!-- Mensagem flutuante Popover -->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right"
+                    title="Informação" data-bs-content="Esta é outra dica flutuante criada pelo componente Popover do Bootstrap 5.">
+                    Clique Aqui
+                </button>
             </li>
         </ul>
         <p class="lead">
@@ -35,20 +52,10 @@
         <hr>
     </div>
     <!-- Valor: 1.5 pontos -->
-    <!-- Mensagens Flutuantes -->
+    <!-- FAZER AQUI -->
+    <div class="container">
 
-    <!-- Toast -->
-    <div class="toast" id="toastInfo" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-            <i class="bi bi-info-circle-fill text-primary me-2"></i>
-            <strong class="me-auto">Informação</strong>
-            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
-        </div>
-        <div class="toast-body">
-            Esta é uma notificação criada pelo componente Toast do Bootstrap 5.
-        </div>
     </div>
-
     <!-- ATÉ AQUI -->
 
 

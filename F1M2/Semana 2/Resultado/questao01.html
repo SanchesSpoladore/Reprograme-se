@@ -12,6 +12,10 @@
         .bg-opacity-10 {
             background-color: rgba(0, 0, 0, 0.1);
         }
+        .cell {
+            padding: 20px;
+            margin: 3px;
+        }
     </style>
 </head>
 
@@ -25,16 +29,38 @@
     <!-- Valor: 1.5 pontos -->
     <!-- FAZER AQUI -->
     <div class="container">
-        <div class="row g-3">
-            <div class="col bg-primary p-3">Célula 1</div>
-            <div class="col bg-secondary p-3">Célula 2</div>
-            <div class="col bg-success p-3">Célula 3</div>
-            <div class="col bg-danger p-3">Célula 4</div>
-            <div class="col bg-warning p-3">Célula 5</div>
-            <div class="col bg-info p-3">Célula 6</div>
-            <div class="col bg-light p-3">Célula 7</div>
-            <div class="col bg-dark p-3">Célula 8</div>
-            <div class="col bg-primary p-3">Célula 9</div>
+        <div class="row">
+            <div class="col-4">
+                <div class="cell bg-primary">Célula 1</div>
+            </div>
+            <div class="col-4">
+                <div class="cell bg-secondary">Célula 2</div>
+            </div>
+            <div class="col-4">
+                <div class="cell bg-success">Célula 3</div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-4">
+                <div class="cell bg-danger">Célula 4</div>
+            </div>
+            <div class="col-4">
+                <div class="cell bg-warning">Célula 5</div>
+            </div>
+            <div class="col-4">
+                <div class="cell bg-info">Célula 6</div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-4">
+                <div class="cell bg-light">Célula 7</div>
+            </div>
+            <div class="col-4">
+                <div class="cell bg-dark">Célula 8</div>
+            </div>
+            <div class="col-4">
+                <div class="cell bg-primary">Célula 9</div>
+            </div>
         </div>
     </div>
 </body>
