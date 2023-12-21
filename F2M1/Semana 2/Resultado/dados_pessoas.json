@@ -1,0 +1,72 @@
+[
+  {
+    "NomeCompleto": "Ana Silva",
+    "Endereco": "Rua das Flores, 123, Cidade Alegre",
+    "Nacionalidade": "Brasileira",
+    "Idade": 25,
+    "Sexo": "Feminino"
+  },
+  {
+    "NomeCompleto": "July",
+    "Endereco": "Não lembro",
+    "Nacionalidade": "Brasileira",
+    "Idade": 22,
+    "Sexo": "Feminino"
+  },
+  {
+    "NomeCompleto": "Maria Eduarda",
+    "Endereco": "Não lembro",
+    "Nacionalidade": "Brasileira",
+    "Idade": 18,
+    "Sexo": "Feminino"
+  },
+  {
+    "NomeCompleto": "Slohan",
+    "Endereco": "Faço nem ideia",
+    "Nacionalidade": "Brasileira",
+    "Idade": 18,
+    "Sexo": "Masculino"
+  },
+  {
+    "NomeCompleto": "Matheus Oliveira",
+    "Endereco": "Não lembro",
+    "Nacionalidade": "Brasileira",
+    "Idade": 18,
+    "Sexo": "Masculino"
+  },
+  {
+    "NomeCompleto": "Byanca",
+    "Endereco": "Faço nem ideia",
+    "Nacionalidade": "Brasileira",
+    "Idade": 19,
+    "Sexo": "Feminino"
+  },
+  {
+    "NomeCompleto": "Miguel",
+    "Endereco": "Faço nem ideia",
+    "Nacionalidade": "Brasileira",
+    "Idade": 25,
+    "Sexo": "Masculino"
+  },
+  {
+    "NomeCompleto": "Miguel Ferreira",
+    "Endereco": "Não lembro",
+    "Nacionalidade": "Brasileira",
+    "Idade": 18,
+    "Sexo": "Masculino"
+  },
+  {
+    "NomeCompleto": "Gabriel Carvalho",
+    "Endereco": "Não lembro",
+    "Nacionalidade": "Brasileira",
+    "Idade": 17,
+    "Sexo": "Masculino"
+  },
+  {
+    "NomeCompleto": "Maria Clara",
+    "Endereco": "Não lembro",
+    "Nacionalidade": "Brasileira",
+    "Idade": 18,
+    "Sexo": "Feminino"
+  }
+]
