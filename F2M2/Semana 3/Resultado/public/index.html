@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviço de Envio de Arquivos</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    #container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #008080;
+    }
+
+    input, button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Serviço de Envio de Arquivos</h1>
+    <h2>Selecione e envie seus arquivos</h2>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".jpg, .jpeg, .png, .pdf" required>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Arquivos Enviados</h2>
+    <button onclick="listarArquivos()">Listar Arquivos</button>
+    <ul id="listaArquivos"></ul>
+  </div>
+
+  <script>
+    function listarArquivos() {
+      fetch('/listar')
+        .then(response => response.json())
+        .then(data => {
+          const listaArquivos = document.getElementById('listaArquivos');
+          listaArquivos.innerHTML = '';
+
+          data.files.forEach(file => {
+            const listItem = document.createElement('li');
+            listItem.textContent = file;
+            listaArquivos.appendChild(listItem);
+          });
+        })
+        .catch(error => console.error('Erro ao listar arquivos:', error));
+    }
+  </script>
+</body>
+</html>
