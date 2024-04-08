@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Filme</title>
+</head>
+
+<body>
+  <h1>Cadastro de Filme</h1>
+  <form action="/filme" method="POST">
+    <label for="titulo">Título:</label><br>
+    <input type="text" id="titulo" name="titulo" required><br>
+    <label for="categoria">Categoria:</label><br>
+    <input type="text" id="categoria" name="categoria" required><br>
+    <label for="genero">Gênero:</label><br>
+    <input type="text" id="genero" name="genero" required><br>
+    <label for="link_sinopse">Link da Sinopse:</label><br>
+    <input type="text" id="link_sinopse" name="link_sinopse" required><br><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+
+</html>
