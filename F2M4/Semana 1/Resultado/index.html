@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Estado</title>
+</head>
+
+<body>
+  <h1>Formulário de Cadastro de Estado</h1>
+  <form id="formularioEstado">
+    <label for="nome">Nome do Estado:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+    <label for="capital">Capital:</label><br>
+    <input type="text" id="capital" name="capital"><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>Lista de Estados</h2>
+  <ul id="listaEstados"></ul>
+
+  <script>
+    const formularioEstado = document.getElementById('formularioEstado');
+    const listaEstados = document.getElementById('listaEstados');
+
+    formularioEstado.addEventListener('submit', async (evento) => {
+      evento.preventDefault();
+
+      const formData = new FormData(formularioEstado);
+      const novoEstado = {
+        nome: formData.get('nome'),
+        capital: formData.get('capital')
+      };
+
+      const resposta = await fetch('/estados', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(novoEstado)
+      });
+
+      const data = await resposta.json();
+      adicionarEstadoLista(data);
+      formularioEstado.reset();
+    });
+
+    async function buscarEstados() {
+      const resposta = await fetch('/estados');
+      const data = await resposta.json();
+      data.forEach(estado => {
+        adicionarEstadoLista(estado);
+      });
+    }
+
+    function adicionarEstadoLista(estado) {
+      const itemLista = document.createElement('li');
+      itemLista.textContent = `Nome: ${estado.nome}, Capital: ${estado.capital}`;
+      listaEstados.appendChild(itemLista);
+    }
+
+    buscarEstados();
+  </script>
+</body>
+
+</html>
